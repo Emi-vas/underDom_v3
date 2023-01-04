@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import ReactPlayer from 'react-player';
 import { NavLink } from 'react-router-dom';
 //style
 import { Quote, Wrapper } from './Header.styles';
@@ -24,6 +25,14 @@ const Header = () => {
     return (
         <>
         <Wrapper>
+            <div className='video'>
+                <ReactPlayer 
+                    url="./videos/stars.mp4" 
+                    playing loop={true} muted 
+                    width={"1900px"}
+                    height={"900px"}
+                />
+            </div>
             <nav>
                 <NavLink to={'/'}>mes services</NavLink>
                 <NavLink to={'/'}>contact</NavLink>
@@ -33,6 +42,7 @@ const Header = () => {
             </h1>
             <img src={"./images/" + logo} className="header_logo" alt="logo underdom" />
 
+
             <img src="./images/forme1.svg" alt="forme" className="header_form1" />
             <img src="./images/forme2.svg" alt="forme" className="header_form2" />
         </Wrapper>
@@ -41,6 +51,7 @@ const Header = () => {
             <p><strong>innovation  </strong></p>
             <p>quand elle s'unit à {smallSize ? <br /> : null} la technique</p>
         </Quote>
+
         </>
     );
 };

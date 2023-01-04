@@ -1,3 +1,4 @@
+import { blue } from "@mui/material/colors";
 import styled from "styled-components";
 import { COLORS, FONT } from "../../../assets/constants";
 
@@ -9,16 +10,23 @@ export const Wrapper = styled.div`
     position: relative;
     overflow: hidden;
 
-    background: url("./images/dev.jpg");
+   // background: url("./images/dev.jpg");
     background-size: 100%;
     background-position: 100% 90%;
 
     height: 550px;
 
+    .video {
+        position: absolute;
+        transform: translateY(-70px);
+        object-fit: cover;
+    }
+
     .header_logo {
         margin-top: 50px;
         width: 110px;
         animation: logoArrive both 2s;
+        opacity: 0.8;
     }
 
 
@@ -29,6 +37,7 @@ export const Wrapper = styled.div`
         margin-top: 70px;
         color: ${COLORS.bg};
         display: flex;
+        z-index: 4;
     }
 
     p {
@@ -119,6 +128,14 @@ export const Wrapper = styled.div`
             left: -2px;
             right: 5px;
             width: 105%;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .video {
+            transform: translateY(-150px);
         }
     }
 
