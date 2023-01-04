@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
 
     .video {
         position: absolute;
-        transform: translateY(-70px);
+        transform: translateY(-190px);
         object-fit: cover;
     }
 

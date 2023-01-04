@@ -7,6 +7,7 @@ import { Quote, Wrapper } from './Header.styles';
 const Header = () => {
     const [logo, setLogo] = useState("logo_loup.png")
     const [smallSize, setSmallSize] = useState(false)
+    const [width, setWidth] = useState(1900)
 
     useEffect(()=>{
         setTimeout(()=>{
@@ -29,8 +30,8 @@ const Header = () => {
                 <ReactPlayer 
                     url="./videos/stars.mp4" 
                     playing loop={true} muted 
-                    width={"1900px"}
-                    height={"900px"}
+                    width={"2000px"}
+                    height={"1200px"}
                 />
             </div>
             <nav>
