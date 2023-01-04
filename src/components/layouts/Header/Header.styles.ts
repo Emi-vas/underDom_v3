@@ -46,6 +46,25 @@ export const Wrapper = styled.div`
         border-bottom-right-radius: 20px;
     }
 
+    nav {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        color: white;
+        padding: 10px;
+        font-size: 1.1em;
+        background: ${COLORS.blue1};
+        border-bottom-left-radius: 20px;
+
+        a {
+            color: white;
+            border-right: 1px solid white;
+            padding: 10px;
+        }
+        a:last-of-type {
+            border-right: none;
+        }
+    }
 
     .header_form1 {
         position: absolute;
@@ -108,7 +127,7 @@ export const Wrapper = styled.div`
 export const Quote = styled.div`
     position: relative;
     z-index: 3;
-    transform: translateY(-50px);
+    transform: translateY(-70px);
     text-align: center;
     font-family: ${FONT.h2};
     font-size: 1.5em;
@@ -119,26 +138,76 @@ export const Quote = styled.div`
     }
 
     strong {
-        font-size: 1.2em;
+        font-size: 1.7em;
+        color: orange;
     }
 
     p:first-of-type {
-        transform: translateX(-120px);
+        transform: translateX(-200px);
         animation: firstArrive 0.7s 2s both;
     }
     p:last-of-type {
-        transform: translateX(220px);
+        transform: translateX(280px);
         animation: lastArrive 0.7s 2s both;
     }
+
+    @media screen and (max-width: 1200px) {
+        transform: translateY(-50px);
+        font-size: 1.3em;  
+    }
+    @media screen and (max-width: 800px) {
+        transform: translateY(-20px);
+
+        p {
+            margin: 15px 0;
+        }
+        p:last-of-type {
+            transform: translateX(200px);
+            animation: lastArrive2 0.7s 2s both;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        transform: translateY(0px);
+        font-size: 0.9em;
+
+        p {
+            margin: 5px 0;
+        }
+        p:last-of-type {
+            transform: translateX(90px);
+            animation: lastArriveTel 0.7s 2s both;
+        }
+        p:first-of-type {
+            transform: translateX(-70px);
+            animation: firstArriveTel 0.7s 2s both;
+        }
+    }
+
+
     @keyframes firstArrive {
         to {
-            transform: translateX(-70px);
+            transform: translateX(-140px);
+        }
+    }
+    @keyframes firstArriveTel {
+        to {
+            transform: translateX(-60px);
         }
     }
     @keyframes lastArrive {
         to {
-            transform: translateX(170px);
+            transform: translateX(210px);
         }
     }
-  
+    @keyframes lastArrive2 {
+        to {
+            transform: translateX(150px);
+        }
+    }
+    @keyframes lastArriveTel {
+        to {
+            transform: translateX(70px);
+        }
+    }
 `

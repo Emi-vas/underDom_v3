@@ -17,6 +17,12 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: unset;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
 
 ::-webkit-scrollbar {
     width: 12px;
