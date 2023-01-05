@@ -14,8 +14,6 @@ const Header = () => {
         }, 2000)
     },[])
 
-
-
     return (
         <>
         <Wrapper>

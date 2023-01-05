@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 130px;
     .photo {
         width: 400px;
         aspect-ratio: 1/1;

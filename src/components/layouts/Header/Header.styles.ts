@@ -24,9 +24,9 @@ export const Wrapper = styled.div`
 
     .header_logo {
         margin-top: 50px;
-        width: 110px;
+        width: 160px;
         animation: logoArrive both 2s;
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
 
