@@ -6,5 +6,6 @@ export const FONT = {
 
 export const COLORS = {
     bg: "#e5f6ff",
-    blue1: "#1e3b6f"
+    blue1: "#1e3b6f",
+    orangeLight: 'rgb(255, 224, 111)'
 }
