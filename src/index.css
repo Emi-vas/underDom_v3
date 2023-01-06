@@ -23,6 +23,21 @@ a {
   font-size: inherit;
 }
 
+p {
+  line-height: 1.4em;
+}
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.3em;
+  transform: translateY(-40px);
+}
+
 ::-webkit-scrollbar {
     width: 12px;
   }
